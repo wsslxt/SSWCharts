@@ -23,6 +23,7 @@
     self = [super initWithChartType:type];
     if (self) {
         [self setUp];
+        
     }
     return self;
 }
