@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C1B1834209AB13200002C40 /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B1833209AB13200002C40 /* PieChartViewController.m */; };
+		5C1B1837209AB54E00002C40 /* SSWBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B1836209AB54E00002C40 /* SSWBarChartView.m */; };
+		5C1B183A209ABB7000002C40 /* BarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B1839209ABB7000002C40 /* BarChartViewController.m */; };
+		5C1B183D209AE6D600002C40 /* LinChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B183C209AE6D600002C40 /* LinChartViewController.m */; };
+		5C1B1840209AE87100002C40 /* SSWLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B183F209AE87100002C40 /* SSWLineChartView.m */; };
+		5C9256AB209963C000252828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9256AA209963C000252828 /* AppDelegate.m */; };
+		5C9256AE209963C000252828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9256AD209963C000252828 /* ViewController.m */; };
+		5C9256B1209963C000252828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9256AF209963C000252828 /* Main.storyboard */; };
+		5C9256B3209963C100252828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9256B2209963C100252828 /* Assets.xcassets */; };
+		5C9256B6209963C100252828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9256B4209963C100252828 /* LaunchScreen.storyboard */; };
+		5C9256B9209963C100252828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9256B8209963C100252828 /* main.m */; };
+		5C9256C22099640000252828 /* SSWCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9256C12099640000252828 /* SSWCharts.m */; };
+		5C9256C52099651800252828 /* SSWPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9256C42099651800252828 /* SSWPieChartView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5C1B1832209AB13200002C40 /* PieChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieChartViewController.h; sourceTree = "<group>"; };
+		5C1B1833209AB13200002C40 /* PieChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PieChartViewController.m; sourceTree = "<group>"; };
+		5C1B1835209AB54E00002C40 /* SSWBarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWBarChartView.h; sourceTree = "<group>"; };
+		5C1B1836209AB54E00002C40 /* SSWBarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWBarChartView.m; sourceTree = "<group>"; };
+		5C1B1838209ABB7000002C40 /* BarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartViewController.h; sourceTree = "<group>"; };
+		5C1B1839209ABB7000002C40 /* BarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartViewController.m; sourceTree = "<group>"; };
+		5C1B183B209AE6D600002C40 /* LinChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinChartViewController.h; sourceTree = "<group>"; };
+		5C1B183C209AE6D600002C40 /* LinChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinChartViewController.m; sourceTree = "<group>"; };
+		5C1B183E209AE87100002C40 /* SSWLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWLineChartView.h; sourceTree = "<group>"; };
+		5C1B183F209AE87100002C40 /* SSWLineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWLineChartView.m; sourceTree = "<group>"; };
+		5C9256A6209963C000252828 /* SSWCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSWCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9256A9209963C000252828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C9256AA209963C000252828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C9256AC209963C000252828 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C9256AD209963C000252828 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C9256B0209963C000252828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C9256B2209963C100252828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C9256B5209963C100252828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C9256B7209963C100252828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9256B8209963C100252828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C9256C02099640000252828 /* SSWCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWCharts.h; sourceTree = "<group>"; };
+		5C9256C12099640000252828 /* SSWCharts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWCharts.m; sourceTree = "<group>"; };
+		5C9256C32099651800252828 /* SSWPieChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWPieChartView.h; sourceTree = "<group>"; };
+		5C9256C42099651800252828 /* SSWPieChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWPieChartView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C9256A3209963C000252828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C92569D209963C000252828 = {
+			isa = PBXGroup;
+			children = (
+				5C9256A8209963C000252828 /* SSWCharts */,
+				5C9256A7209963C000252828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C9256A7209963C000252828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C9256A6209963C000252828 /* SSWCharts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C9256A8209963C000252828 /* SSWCharts */ = {
+			isa = PBXGroup;
+			children = (
+				5C9256BF209963D800252828 /* Chart */,
+				5C9256A9209963C000252828 /* AppDelegate.h */,
+				5C9256AA209963C000252828 /* AppDelegate.m */,
+				5C9256AC209963C000252828 /* ViewController.h */,
+				5C9256AD209963C000252828 /* ViewController.m */,
+				5C1B1832209AB13200002C40 /* PieChartViewController.h */,
+				5C1B1833209AB13200002C40 /* PieChartViewController.m */,
+				5C1B1838209ABB7000002C40 /* BarChartViewController.h */,
+				5C1B1839209ABB7000002C40 /* BarChartViewController.m */,
+				5C1B183B209AE6D600002C40 /* LinChartViewController.h */,
+				5C1B183C209AE6D600002C40 /* LinChartViewController.m */,
+				5C9256AF209963C000252828 /* Main.storyboard */,
+				5C9256B2209963C100252828 /* Assets.xcassets */,
+				5C9256B4209963C100252828 /* LaunchScreen.storyboard */,
+				5C9256B7209963C100252828 /* Info.plist */,
+				5C9256B8209963C100252828 /* main.m */,
+			);
+			path = SSWCharts;
+			sourceTree = "<group>";
+		};
+		5C9256BF209963D800252828 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				5C9256C02099640000252828 /* SSWCharts.h */,
+				5C9256C12099640000252828 /* SSWCharts.m */,
+				5C9256C32099651800252828 /* SSWPieChartView.h */,
+				5C9256C42099651800252828 /* SSWPieChartView.m */,
+				5C1B1835209AB54E00002C40 /* SSWBarChartView.h */,
+				5C1B1836209AB54E00002C40 /* SSWBarChartView.m */,
+				5C1B183E209AE87100002C40 /* SSWLineChartView.h */,
+				5C1B183F209AE87100002C40 /* SSWLineChartView.m */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C9256A5209963C000252828 /* SSWCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9256BC209963C100252828 /* Build configuration list for PBXNativeTarget "SSWCharts" */;
+			buildPhases = (
+				5C9256A2209963C000252828 /* Sources */,
+				5C9256A3209963C000252828 /* Frameworks */,
+				5C9256A4209963C000252828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSWCharts;
+			productName = SSWCharts;
+			productReference = 5C9256A6209963C000252828 /* SSWCharts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C92569E209963C000252828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = com.sswang.www;
+				TargetAttributes = {
+					5C9256A5209963C000252828 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 5C9256A1209963C000252828 /* Build configuration list for PBXProject "SSWCharts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C92569D209963C000252828;
+			productRefGroup = 5C9256A7209963C000252828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C9256A5209963C000252828 /* SSWCharts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C9256A4209963C000252828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9256B6209963C100252828 /* LaunchScreen.storyboard in Resources */,
+				5C9256B3209963C100252828 /* Assets.xcassets in Resources */,
+				5C9256B1209963C000252828 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C9256A2209963C000252828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9256C22099640000252828 /* SSWCharts.m in Sources */,
+				5C1B183A209ABB7000002C40 /* BarChartViewController.m in Sources */,
+				5C9256C52099651800252828 /* SSWPieChartView.m in Sources */,
+				5C1B1840209AE87100002C40 /* SSWLineChartView.m in Sources */,
+				5C9256AE209963C000252828 /* ViewController.m in Sources */,
+				5C9256B9209963C100252828 /* main.m in Sources */,
+				5C1B183D209AE6D600002C40 /* LinChartViewController.m in Sources */,
+				5C1B1837209AB54E00002C40 /* SSWBarChartView.m in Sources */,
+				5C1B1834209AB13200002C40 /* PieChartViewController.m in Sources */,
+				5C9256AB209963C000252828 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5C9256AF209963C000252828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C9256B0209963C000252828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C9256B4209963C100252828 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C9256B5209963C100252828 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C9256BA209963C100252828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C9256BB209963C100252828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C9256BD209963C100252828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSWCharts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sswang.SSWCharts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C9256BE209963C100252828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SSWCharts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sswang.SSWCharts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C9256A1209963C000252828 /* Build configuration list for PBXProject "SSWCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9256BA209963C100252828 /* Debug */,
+				5C9256BB209963C100252828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C9256BC209963C100252828 /* Build configuration list for PBXNativeTarget "SSWCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9256BD209963C100252828 /* Debug */,
+				5C9256BE209963C100252828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C92569E209963C000252828 /* Project object */;
+}
