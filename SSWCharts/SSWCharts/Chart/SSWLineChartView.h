@@ -11,7 +11,7 @@
 @interface SSWLineChartView : SSWCharts
 @property(nonatomic)NSMutableArray      *xValuesArr;//x轴的值数组
 @property(nonatomic)NSMutableArray      *yValuesArr;//y轴的值数组
-@property(nonatomic,assign)CGFloat      barWidth;//柱形条的宽度
+@property(nonatomic,assign)CGFloat      barWidth;//x轴刻度占据的宽度
 @property(nonatomic,assign)CGFloat      gapWidth;//间隔宽度
 @property(nonatomic,assign)CGFloat      yScaleValue;//y轴的刻度值
 @property(nonatomic,assign)int          yAxisCount;//y轴刻度的个数

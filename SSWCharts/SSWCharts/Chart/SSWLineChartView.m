@@ -54,10 +54,13 @@
         if ([path containsPoint:point]) {
             NSInteger  index = [self.linePointPathArr indexOfObject:path];
             CGPoint  endPoint = [self.barsEndPointsArr[index] CGPointValue];
-            NSLog(@"点击了第%ld个柱形图",index);
-            self.bubbleLab.hidden=NO;
-            self.bubbleLab.text = self.yValuesArr[index];
-            self.bubbleLab.center = CGPointMake(endPoint.x, endPoint.y-10);
+//            NSLog(@"点击了第%ld个柱形图",index);
+//            self.bubbleLab.hidden=NO;
+//            self.bubbleLab.text = self.yValuesArr[index];
+//            self.bubbleLab.center = CGPointMake(endPoint.x, endPoint.y-10);
+            if (self.delegate && [self.delegate respondsToSelector:@selector(SSWChartView:didSelectIndex:)]) {
+                [self.delegate SSWChartView:self didSelectIndex:index];
+            }
         }
 }
 }
@@ -231,7 +234,6 @@
         lab.bounds = CGRectMake(0, 0, self.barWidth+self.gapWidth*4/5, 20);
         lab.center = CGPointMake(point.x, point.y-10);
         [self.contentView addSubview:lab];
-        
     }
 }
 @end

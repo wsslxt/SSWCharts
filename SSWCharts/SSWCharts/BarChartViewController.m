@@ -55,6 +55,7 @@
                                  @"350",
                                  @"450"] mutableCopy];
     barChartView.unit = @"吨";
+    barChartView.yScaleValue=60;
     barChartView.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
     [self.view addSubview:barChartView];
 }

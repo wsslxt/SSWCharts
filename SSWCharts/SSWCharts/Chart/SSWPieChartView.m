@@ -47,7 +47,9 @@
     CGPoint  point = [tap locationInView:self];
     for (UIBezierPath  *path in self.pathsArr) {
         if ([path containsPoint:point]) {
-            NSLog(@"点击的是%@",self.titlesArr[[self.pathsArr indexOfObject:path]]);
+            if (self.delegate && [self.delegate respondsToSelector:@selector(SSWChartView:didSelectIndex:)]) {
+                [self.delegate SSWChartView:self didSelectIndex:[self.pathsArr indexOfObject:path]];
+            }
         }
         
     }

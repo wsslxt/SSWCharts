@@ -74,10 +74,13 @@
         CGPoint  endPoint = [self.barsEndPointsArr[i] CGPointValue];
         if (point.x>=startPoint.x-self.barWidth/2&&point.x<=startPoint.x+self.barWidth/2&&point.y>=endPoint.y&&point.y<=startPoint.y) {
              NSLog(@"点击了第%d个柱形图",i);
-            self.bubbleLab.hidden=NO;
-            self.bubbleLab.text = self.yValuesArr[i];
-            self.bubbleLab.center = CGPointMake(endPoint.x, endPoint.y-10);
+//            self.bubbleLab.hidden=NO;
+//            self.bubbleLab.text = self.yValuesArr[i];
+//            self.bubbleLab.center = CGPointMake(endPoint.x, endPoint.y-10);
 //            CAShapeLayer  *selctedLayer = self.barsLayersArr[i];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(SSWChartView:didSelectIndex:)]) {
+                [self.delegate SSWChartView:self didSelectIndex:i];
+            }
         }
     }
 }

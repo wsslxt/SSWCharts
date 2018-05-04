@@ -12,6 +12,7 @@ typedef NS_ENUM(NSInteger,SSWChartsType){
     SSWChartsTypeLine,
     SSWChartsTypeBar
 };
+@protocol SSWChartsDelegate;
 @interface SSWCharts : UIView
 -(instancetype)initWithChartType:(SSWChartsType)type;
 @property(nonatomic,assign)SSWChartsType        chartType;
@@ -21,4 +22,9 @@ typedef NS_ENUM(NSInteger,SSWChartsType){
 
 @property(nonatomic)UILabel                     *bubbleLab;//点击时提示泡泡
 @property(nonatomic,assign)BOOL                 showEachYValus;//是否显示每个Y值
+
+@property(nonatomic,assign)id<SSWChartsDelegate>delegate;
+@end
+@protocol SSWChartsDelegate<NSObject>
+-(void)SSWChartView:(SSWCharts *)chartView didSelectIndex:(NSInteger)index;
 @end
