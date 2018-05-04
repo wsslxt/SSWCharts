@@ -22,37 +22,15 @@
 -(void)viewDidLayoutSubviews{
     SSWLineChartView   *barChartView = [[SSWLineChartView alloc]initWithChartType:SSWChartsTypeBar];
     barChartView.backgroundColor = [UIColor orangeColor];
-    barChartView.xValuesArr = [@[@"小麦",
-                                 @"玉米",
-                                 @"早籼稻",
-                                 @"旱籼稻",
-                                 @"大豆",
-                                 @"小豆",
-                                 @"小米",
-                                 @"大米",
-                                 @"菜籽",
-                                 @"芝麻",
-                                 @"高粱",
-                                 @"甘蔗",
-                                 @"豌豆",
-                                 @"红豆",
-                                 @"绿豆",
-                                 @"青稞"] mutableCopy];
-    barChartView.yValuesArr = [@[@"100",
-                                 @"200",
-                                 @"300",
-                                 @"60",
-                                 @"460",
-                                 @"368",
-                                 @"235",
-                                 @"222",
-                                 @"100",
-                                 @"200",
-                                 @"300",
-                                 @"500",
-                                 @"136",
-                                 @"366",
-                                 @"350",
+    barChartView.xValuesArr = [@[@"小麦",@"玉米",@"早籼稻",@"旱籼稻",
+                                 @"大豆",@"小豆",@"小米",@"大米",
+                                 @"菜籽",@"芝麻",@"高粱",@"甘蔗",
+                                 @"豌豆",@"红豆",@"绿豆",@"青稞"] mutableCopy];
+    barChartView.yValuesArr = [@[@"100",@"200",@"300",
+                                 @"60",@"460",@"368",
+                                 @"235", @"222",@"100",
+                                 @"200",@"300",@"500",
+                                 @"136",@"366",@"350",
                                  @"450"] mutableCopy];
     barChartView.unit = @"吨";
     barChartView.yScaleValue=60;
