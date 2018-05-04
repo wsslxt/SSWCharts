@@ -16,4 +16,5 @@
 @property(nonatomic,assign)CGFloat      yScaleValue;//y轴的刻度值
 @property(nonatomic,assign)int          yAxisCount;//y轴刻度的个数
 @property(nonatomic,copy)NSString       *unit;//单位
+@property(nonatomic)UIColor             *lineColor;//设置线的颜色
 @end

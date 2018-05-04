@@ -38,6 +38,7 @@
     self.yScaleValue = 50;
     self.yAxisCount = 10;
     self.showEachYValus=YES;
+    self.barCorlor = [UIColor greenColor];
     [self addSubview:self.scrollView];
     [self.scrollView addSubview:self.contentView];
     [self.contentView addSubview:self.unitLab];
@@ -173,7 +174,7 @@
         CGPoint   endPoint = CGPointMake(startPoint.x, startPoint.y-barHeight);
         [self.barsEndPointsArr addObject:[NSValue valueWithCGPoint:endPoint]];
         CAShapeLayer *barLayer = [CAShapeLayer layer];
-        barLayer.strokeColor = [UIColor greenColor].CGColor;
+        barLayer.strokeColor =self.barCorlor.CGColor;
         barLayer.lineWidth = self.barWidth;
         [self.contentView.layer addSublayer:barLayer];
      
@@ -202,7 +203,7 @@
     for (int i = 0; i<self.xValuesArr.count; i++) {
         CGPoint  point = [self.barsEndPointsArr[i] CGPointValue];
         UILabel  *lab = [[UILabel alloc]init];
-        lab.textColor = [UIColor greenColor];
+        lab.textColor = self.barCorlor;
         lab.font = [UIFont systemFontOfSize:10];
         lab.text = self.yValuesArr[i];
         lab.textAlignment = NSTextAlignmentCenter;

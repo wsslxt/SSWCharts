@@ -38,6 +38,7 @@
     self.yScaleValue = 50;
     self.yAxisCount = 10;
     self.showEachYValus=YES;
+    self.lineColor = [UIColor greenColor];
     [self addSubview:self.scrollView];
     [self.scrollView addSubview:self.contentView];
     [self.contentView addSubview:self.unitLab];
@@ -188,7 +189,7 @@
         [self.linePointPathArr addObject:path];
         
         CAShapeLayer  *layer = [CAShapeLayer layer];
-        layer.strokeColor = [UIColor greenColor].CGColor;
+        layer.strokeColor = self.lineColor.CGColor;
         layer.fillColor = self.backgroundColor.CGColor;
         layer.lineWidth=1;
         layer.path = path.CGPath;
@@ -205,7 +206,7 @@
     }
     
     CAShapeLayer  *lineLayer = [CAShapeLayer layer];
-    lineLayer.strokeColor = [UIColor greenColor].CGColor;
+    lineLayer.strokeColor = self.lineColor.CGColor;
     lineLayer.lineWidth = 1;
     lineLayer.fillColor = [UIColor clearColor].CGColor;
     lineLayer.path = linePath.CGPath;
@@ -227,7 +228,7 @@
     for (int i = 0; i<self.xValuesArr.count; i++) {
         CGPoint  point = [self.barsEndPointsArr[i] CGPointValue];
         UILabel  *lab = [[UILabel alloc]init];
-        lab.textColor = [UIColor greenColor];
+        lab.textColor = self.lineColor;
         lab.font = [UIFont systemFontOfSize:10];
         lab.text = self.yValuesArr[i];
         lab.textAlignment = NSTextAlignmentCenter;
