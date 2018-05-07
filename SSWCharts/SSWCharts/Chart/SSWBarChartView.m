@@ -10,6 +10,7 @@
 @interface SSWBarChartView (){
      CGFloat   _totalWidth;
      CGFloat   _totalHeight;
+    CAShapeLayer  *_lineLayer;//刻度layer;
 }
 @property(nonatomic)UIScrollView        *scrollView;
 @property(nonatomic)UIView              *contentView;
@@ -99,11 +100,31 @@
     _totalHeight=self.scrollView.bounds.size.height-30-10;
     self.scrollView.contentSize = CGSizeMake(30+_totalWidth, 0);
     self.contentView.frame = CGRectMake(30,10, _totalWidth,_totalHeight);
+    [self drawBarsChart];
+}
+-(void)drawBarsChart{
+    [self clear];
     [self drawAxis];
     [self addYAxisLabs];
     [self addBars];
     [self addXAxisLabs];
     [self showBarChartYValus];
+}
+//当触发界面重新布局的时候先移除之前的绘制
+-(void)clear{
+    [self.barsStartPointsArr removeAllObjects];
+    [self.barsEndPointsArr removeAllObjects];
+    for (CAShapeLayer *layer in self.barsLayersArr) {
+        [layer removeFromSuperlayer];
+    }
+     [self.barsLayersArr removeAllObjects];
+    [_lineLayer removeFromSuperlayer];
+    _lineLayer=nil;
+    for (UIView *view in self.contentView.subviews) {
+        if([view isEqual:self.unitLab])continue;
+        [view removeFromSuperview];
+       
+    }
 }
 //画坐标轴
 -(void)drawAxis{
@@ -139,6 +160,7 @@
     lineLayer.path = path.CGPath;
     lineLayer.fillColor = [UIColor clearColor].CGColor;
     [self.contentView.layer addSublayer:lineLayer];
+    _lineLayer = lineLayer;
 }
 //给y轴添加刻度显示
 -(void)addYAxisLabs{
@@ -188,15 +210,6 @@
         [self.barsLayersArr addObject:barLayer];
     }
 }
-//添加动画
--(CABasicAnimation *)animationWithDuration:(CFTimeInterval)duration{
-    CABasicAnimation  *anmiation = [CABasicAnimation  animationWithKeyPath:@"strokeEnd"];
-    anmiation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    anmiation.duration =duration;
-    anmiation.fromValue=@(0);
-    anmiation.toValue = @(1);
-    return anmiation;
-}
 //显示每个柱形图的值
 -(void)showBarChartYValus{
     if(!self.showEachYValus)return;
@@ -210,7 +223,6 @@
         lab.bounds = CGRectMake(0, 0, self.barWidth+self.gapWidth*4/5, 20);
         lab.center = CGPointMake(point.x, point.y-10);
         [self.contentView addSubview:lab];
-        
     }
 }
 @end

@@ -12,6 +12,10 @@
 		5C1B183A209ABB7000002C40 /* BarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B1839209ABB7000002C40 /* BarChartViewController.m */; };
 		5C1B183D209AE6D600002C40 /* LinChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B183C209AE6D600002C40 /* LinChartViewController.m */; };
 		5C1B1840209AE87100002C40 /* SSWLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B183F209AE87100002C40 /* SSWLineChartView.m */; };
+		5C841664209FF31A0008C42F /* SSWMutipleBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C841663209FF31A0008C42F /* SSWMutipleBarChartView.m */; };
+		5C841667209FF6B70008C42F /* MutipleBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C841666209FF6B70008C42F /* MutipleBarChartViewController.m */; };
+		5C84166A20A029DC0008C42F /* MutipleLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C84166920A029DC0008C42F /* MutipleLineChartViewController.m */; };
+		5C84166D20A02A110008C42F /* SSWMutipleLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C84166C20A02A110008C42F /* SSWMutipleLineChart.m */; };
 		5C9256AB209963C000252828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9256AA209963C000252828 /* AppDelegate.m */; };
 		5C9256AE209963C000252828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9256AD209963C000252828 /* ViewController.m */; };
 		5C9256B1209963C000252828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9256AF209963C000252828 /* Main.storyboard */; };
@@ -33,6 +37,14 @@
 		5C1B183C209AE6D600002C40 /* LinChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinChartViewController.m; sourceTree = "<group>"; };
 		5C1B183E209AE87100002C40 /* SSWLineChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWLineChartView.h; sourceTree = "<group>"; };
 		5C1B183F209AE87100002C40 /* SSWLineChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWLineChartView.m; sourceTree = "<group>"; };
+		5C841662209FF31A0008C42F /* SSWMutipleBarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWMutipleBarChartView.h; sourceTree = "<group>"; };
+		5C841663209FF31A0008C42F /* SSWMutipleBarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWMutipleBarChartView.m; sourceTree = "<group>"; };
+		5C841665209FF6B70008C42F /* MutipleBarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutipleBarChartViewController.h; sourceTree = "<group>"; };
+		5C841666209FF6B70008C42F /* MutipleBarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutipleBarChartViewController.m; sourceTree = "<group>"; };
+		5C84166820A029DC0008C42F /* MutipleLineChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutipleLineChartViewController.h; sourceTree = "<group>"; };
+		5C84166920A029DC0008C42F /* MutipleLineChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutipleLineChartViewController.m; sourceTree = "<group>"; };
+		5C84166B20A02A110008C42F /* SSWMutipleLineChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSWMutipleLineChart.h; sourceTree = "<group>"; };
+		5C84166C20A02A110008C42F /* SSWMutipleLineChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSWMutipleLineChart.m; sourceTree = "<group>"; };
 		5C9256A6209963C000252828 /* SSWCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSWCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9256A9209963C000252828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C9256AA209963C000252828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +102,10 @@
 				5C1B1839209ABB7000002C40 /* BarChartViewController.m */,
 				5C1B183B209AE6D600002C40 /* LinChartViewController.h */,
 				5C1B183C209AE6D600002C40 /* LinChartViewController.m */,
+				5C841665209FF6B70008C42F /* MutipleBarChartViewController.h */,
+				5C841666209FF6B70008C42F /* MutipleBarChartViewController.m */,
+				5C84166820A029DC0008C42F /* MutipleLineChartViewController.h */,
+				5C84166920A029DC0008C42F /* MutipleLineChartViewController.m */,
 				5C9256AF209963C000252828 /* Main.storyboard */,
 				5C9256B2209963C100252828 /* Assets.xcassets */,
 				5C9256B4209963C100252828 /* LaunchScreen.storyboard */,
@@ -108,8 +124,12 @@
 				5C9256C42099651800252828 /* SSWPieChartView.m */,
 				5C1B1835209AB54E00002C40 /* SSWBarChartView.h */,
 				5C1B1836209AB54E00002C40 /* SSWBarChartView.m */,
+				5C841662209FF31A0008C42F /* SSWMutipleBarChartView.h */,
+				5C841663209FF31A0008C42F /* SSWMutipleBarChartView.m */,
 				5C1B183E209AE87100002C40 /* SSWLineChartView.h */,
 				5C1B183F209AE87100002C40 /* SSWLineChartView.m */,
+				5C84166B20A02A110008C42F /* SSWMutipleLineChart.h */,
+				5C84166C20A02A110008C42F /* SSWMutipleLineChart.m */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -184,13 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C841664209FF31A0008C42F /* SSWMutipleBarChartView.m in Sources */,
+				5C84166A20A029DC0008C42F /* MutipleLineChartViewController.m in Sources */,
 				5C9256C22099640000252828 /* SSWCharts.m in Sources */,
+				5C84166D20A02A110008C42F /* SSWMutipleLineChart.m in Sources */,
 				5C1B183A209ABB7000002C40 /* BarChartViewController.m in Sources */,
 				5C9256C52099651800252828 /* SSWPieChartView.m in Sources */,
 				5C1B1840209AE87100002C40 /* SSWLineChartView.m in Sources */,
 				5C9256AE209963C000252828 /* ViewController.m in Sources */,
 				5C9256B9209963C100252828 /* main.m in Sources */,
 				5C1B183D209AE6D600002C40 /* LinChartViewController.m in Sources */,
+				5C841667209FF6B70008C42F /* MutipleBarChartViewController.m in Sources */,
 				5C1B1837209AB54E00002C40 /* SSWBarChartView.m in Sources */,
 				5C1B1834209AB13200002C40 /* PieChartViewController.m in Sources */,
 				5C9256AB209963C000252828 /* AppDelegate.m in Sources */,

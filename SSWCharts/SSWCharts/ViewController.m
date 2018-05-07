@@ -10,6 +10,8 @@
 #import "PieChartViewController.h"
 #import "BarChartViewController.h"
 #import "LinChartViewController.h"
+#import "MutipleBarChartViewController.h"
+#import "MutipleLineChartViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray       *dataArr;
 @end
@@ -21,7 +23,9 @@
      self.dataArr = [@[] mutableCopy];
      self.dataArr = [@[@"PieChartViewController",
                       @"BarChartViewController",
-                      @"LinChartViewController"] mutableCopy];
+                      @"LinChartViewController",
+                      @"MutipleBarChartViewController",
+                      @"MutipleLineChartViewController"] mutableCopy];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataArr.count;

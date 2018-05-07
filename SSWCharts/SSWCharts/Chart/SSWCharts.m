@@ -28,4 +28,13 @@
     }
     return _bubbleLab;
 }
+//添加动画
+-(CABasicAnimation *)animationWithDuration:(CFTimeInterval)duration{
+    CABasicAnimation  *anmiation = [CABasicAnimation  animationWithKeyPath:@"strokeEnd"];
+    anmiation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmiation.duration =duration;
+    anmiation.fromValue=@(0);
+    anmiation.toValue = @(1);
+    return anmiation;
+}
 @end

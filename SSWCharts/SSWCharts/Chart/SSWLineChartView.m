@@ -8,14 +8,17 @@
 
 #import "SSWLineChartView.h"
 @interface SSWLineChartView (){
-    CGFloat   _totalWidth;
-    CGFloat   _totalHeight;
+    CGFloat         _totalWidth;
+    CGFloat         _totalHeight;
+    CAShapeLayer    *_AxiasLineLayer;
+    CAShapeLayer    *_lineLayer;
 }
 @property(nonatomic)UIScrollView        *scrollView;
 @property(nonatomic)UIView              *contentView;
 @property(nonatomic)NSMutableArray      *barsStartPointsArr;
 @property(nonatomic)NSMutableArray      *barsEndPointsArr;
 @property(nonatomic)NSMutableArray      *linePointPathArr;
+@property(nonatomic)NSMutableArray      *linePointLayerArr;
 @property(nonatomic)UILabel             *unitLab;
 @end
 @implementation SSWLineChartView
@@ -33,6 +36,7 @@
     self.barsStartPointsArr  = [@[] mutableCopy];
     self.barsEndPointsArr = [@[] mutableCopy];
     self.linePointPathArr = [@[] mutableCopy];
+    self.linePointLayerArr = [@[] mutableCopy];
     self.barWidth = 20;
     self.gapWidth = 20;
     self.yScaleValue = 50;
@@ -99,6 +103,11 @@
     _totalHeight=self.scrollView.bounds.size.height-30-10;
     self.scrollView.contentSize = CGSizeMake(30+_totalWidth, 0);
     self.contentView.frame = CGRectMake(30,10, _totalWidth,_totalHeight);
+    [self drawLineChart];
+}
+//开始绘制图表
+-(void)drawLineChart{
+    [self clear];
     [self drawAxis];
     [self addYAxisLabs];
     [self addXAxisLabs];
@@ -106,6 +115,23 @@
     [self addLine];
     [self addLinePoints];
     [self showBarChartYValus];
+}
+//触发界面布局之前清除掉之前的绘制
+-(void)clear{
+    [self.barsStartPointsArr removeAllObjects];
+    [self.barsEndPointsArr removeAllObjects];
+    for (CAShapeLayer *layer in self.linePointLayerArr) {
+        [layer removeFromSuperlayer];
+    }
+    [self.linePointLayerArr removeAllObjects];
+    [_AxiasLineLayer removeFromSuperlayer];
+    [_lineLayer removeFromSuperlayer];
+    _AxiasLineLayer=nil;
+    _lineLayer=nil;
+    for (UIView *view in self.contentView.subviews) {
+        if([view isEqual:self.unitLab])continue;
+        [view removeFromSuperview];
+    }
     
 }
 //画坐标轴
@@ -142,6 +168,7 @@
     lineLayer.path = path.CGPath;
     lineLayer.fillColor = [UIColor clearColor].CGColor;
     [self.contentView.layer addSublayer:lineLayer];
+    _AxiasLineLayer = lineLayer;
 }
 //给y轴添加刻度显示
 -(void)addYAxisLabs{
@@ -195,6 +222,7 @@
         layer.path = path.CGPath;
         [layer addAnimation:[self animationWithDuration:0.3*i] forKey:nil];
         [self.contentView.layer addSublayer:layer];
+        [self.linePointLayerArr addObject:layer];
     }
 }
 //添加折线
@@ -212,6 +240,7 @@
     lineLayer.path = linePath.CGPath;
     [lineLayer addAnimation:[self animationWithDuration:0.3*self.barsEndPointsArr.count] forKey:nil];
     [self.contentView.layer addSublayer:lineLayer];
+    _lineLayer = lineLayer;
 }
 //添加动画
 -(CABasicAnimation *)animationWithDuration:(CFTimeInterval)duration{
