@@ -9,6 +9,7 @@ barChartView.unit = @"吨";
 barChartView.yScaleValue=60;
 barChartView.frame = CGRectMake(0, 100, self.view.bounds.size.width, 300);
 [self.view addSubview:barChartView];
+
 ![柱形图](https://raw.githubusercontent.com/wsslxt/SSWCharts/master/images/barChart.png)
 #
 折线图![折线图](https://raw.githubusercontent.com/wsslxt/SSWCharts/master/images/lineChart.png)
