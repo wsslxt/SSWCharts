@@ -6,7 +6,7 @@ SSWChart 是一款快速集成到项目中的图表框架，其中包含饼状�
   ![折线图](https://raw.githubusercontent.com/wsslxt/SSWCharts/master/images/lineChart.png)
 # 饼状图:
 ![饼状图](https://raw.githubusercontent.com/wsslxt/SSWCharts/master/images/pieChart.png)
-# mutipleBarChart
+# mutipleBarChart:
 ![mutipleBarChart](https://raw.githubusercontent.com/wsslxt/SSWCharts/master/images/mutipleBar.png)
-# mutipleLineChart
+# mutipleLineChart:
 ![mutipleLineChart](https://raw.githubusercontent.com/wsslxt/SSWCharts/master/images/mutipleLine.png)
