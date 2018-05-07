@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"mutipleLineChartView";
 }
 -(void)SSWChartView:(SSWCharts *)chartView didSelectMutipleBarChartIndex:(NSArray *)index{
          NSLog(@"点击了(%d,%d)",[index[0] intValue],[index[1] intValue]);
