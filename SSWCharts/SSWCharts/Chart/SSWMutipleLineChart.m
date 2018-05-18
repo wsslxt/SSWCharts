@@ -166,7 +166,7 @@
     for (int i = 0 ; i<self.xValuesArr.count; i++) {
         NSMutableArray  *circlePathArr = [@[] mutableCopy];
         for (int j=0; j<[self.yValuesArr[i] count]; j++) {
-            CGPoint  Point = CGPointMake(self.gapWidth+self.barWidth/2+i*(self.barWidth+self.gapWidth), [self.yValuesArr[i][j] floatValue]*_totalHeight/(self.yAxiasCount*self.yAxiasValus));
+            CGPoint  Point = CGPointMake(self.gapWidth+self.barWidth/2+i*(self.barWidth+self.gapWidth),_totalHeight-([self.yValuesArr[i][j] floatValue]*_totalHeight/(self.yAxiasCount*self.yAxiasValus)));
             //画点
             UIBezierPath  *circlePath = [UIBezierPath bezierPath];
             [circlePath addArcWithCenter:Point radius:5 startAngle:0 endAngle:M_PI*2 clockwise:YES];
