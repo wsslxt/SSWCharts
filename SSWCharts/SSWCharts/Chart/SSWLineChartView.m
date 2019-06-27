@@ -102,7 +102,7 @@
     _totalWidth= self.gapWidth+(self.barWidth+self.gapWidth)*self.xValuesArr.count;
     _totalHeight=self.scrollView.bounds.size.height-30-10;
     self.scrollView.contentSize = CGSizeMake(30+_totalWidth, 0);
-    self.contentView.frame = CGRectMake(30,10, _totalWidth,_totalHeight);
+    self.contentView.frame = CGRectMake(50,10, _totalWidth,_totalHeight);
     [self drawLineChart];
 }
 //开始绘制图表
@@ -175,7 +175,8 @@
     for (int i =self.yAxisCount ; i>0; i--) {
         CGFloat   yAxis = self.yScaleValue*i;
         UILabel  *lab = [[UILabel alloc]init];
-        lab.frame = CGRectMake(-5, (self.yAxisCount-i)*(_totalHeight/self.yAxisCount)-10, -25, 20);
+        lab.frame = CGRectMake(-5, (self.yAxisCount-i)*(_totalHeight/self.yAxisCount)-10, -50, 20);
+//        lab.backgroundColor = [UIColor whiteColor];
         lab.text = [NSString stringWithFormat:@"%.f",yAxis];
         lab.font = [UIFont systemFontOfSize:10];
         lab.textAlignment = NSTextAlignmentRight;
